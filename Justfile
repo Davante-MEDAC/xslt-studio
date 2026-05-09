@@ -1,3 +1,6 @@
+default:
+    just --list
+
 # Runs the Development-Kit Container
 dkc:
     docker pull ghcr.io/leoborai/dkc:latest

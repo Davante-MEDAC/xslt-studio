@@ -64,11 +64,11 @@
 	});
 
 	$effect(() => {
-		if (editor && editor.getValue() !== value) {
-			ignoreChange = true;
-			editor.setValue(value);
-			ignoreChange = false;
-		}
+		const v = value; // always read so Svelte tracks this dep
+		if (!editor || editor.getValue() === v) return;
+		ignoreChange = true;
+		editor.setValue(v);
+		ignoreChange = false;
 	});
 
 	onDestroy(() => {
