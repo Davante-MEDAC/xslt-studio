@@ -12,6 +12,7 @@
 
 	let container: HTMLDivElement;
 	let editor: Monaco.editor.IStandaloneCodeEditor | null = null;
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	let monaco: typeof Monaco | null = null;
 	let ignoreChange = false;
 
@@ -20,6 +21,7 @@
 		monaco = m;
 
 		// Configure monaco workers via CDN
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		(self as any).MonacoEnvironment = {
 			getWorker(_: string, label: string) {
 				const getWorkerModule = (moduleUrl: string, label: string) => {

@@ -2,6 +2,7 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	let MonacoEditor: any = $state(null);
 
 	// State
@@ -86,6 +87,7 @@
 			previewSrc = url;
 
 			setStatus('Transform successful', true);
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		} catch (err: any) {
 			setStatus('Transform error: ' + (err.message ?? String(err)), false);
 		}
@@ -138,7 +140,7 @@
 				onchange={onSampleChange}
 				disabled={loadingSample}
 			>
-				{#each samples as s}
+				{#each samples as s (s.id)}
 					<option value={s.id}>{s.label}</option>
 				{/each}
 			</select>
