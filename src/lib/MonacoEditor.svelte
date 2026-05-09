@@ -23,10 +23,7 @@
 		(self as any).MonacoEnvironment = {
 			getWorker(_: string, label: string) {
 				const getWorkerModule = (moduleUrl: string, label: string) => {
-					return new Worker(
-						new URL(moduleUrl, import.meta.url),
-						{ type: 'module', name: label }
-					);
+					return new Worker(new URL(moduleUrl, import.meta.url), { type: 'module', name: label });
 				};
 				if (label === 'xml') {
 					return getWorkerModule(
