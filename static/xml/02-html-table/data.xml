@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product sku="A001">
+    <name>Wireless Keyboard</name>
+    <category>Electronics</category>
+    <price>49.99</price>
+    <stock>142</stock>
+    <rating>4.5</rating>
+  </product>
+  <product sku="A002">
+    <name>Ergonomic Mouse</name>
+    <category>Electronics</category>
+    <price>34.99</price>
+    <stock>87</stock>
+    <rating>4.8</rating>
+  </product>
+  <product sku="B001">
+    <name>Standing Desk</name>
+    <category>Furniture</category>
+    <price>399.00</price>
+    <stock>12</stock>
+    <rating>4.2</rating>
+  </product>
+  <product sku="B002">
+    <name>Monitor Arm</name>
+    <category>Furniture</category>
+    <price>79.95</price>
+    <stock>55</stock>
+    <rating>4.6</rating>
+  </product>
+</products>

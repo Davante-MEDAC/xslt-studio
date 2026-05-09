@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company name="Acme Corp">
+  <department name="Engineering">
+    <employee id="E001">
+      <name>Alice Chen</name>
+      <title>Senior Engineer</title>
+      <salary>125000</salary>
+      <joined>2019-03-15</joined>
+    </employee>
+    <employee id="E002">
+      <name>Bob Martinez</name>
+      <title>Staff Engineer</title>
+      <salary>145000</salary>
+      <joined>2017-08-01</joined>
+    </employee>
+  </department>
+  <department name="Design">
+    <employee id="D001">
+      <name>Carol Smith</name>
+      <title>Lead Designer</title>
+      <salary>110000</salary>
+      <joined>2020-01-20</joined>
+    </employee>
+  </department>
+  <department name="Product">
+    <employee id="P001">
+      <name>Dan Lee</name>
+      <title>Product Manager</title>
+      <salary>130000</salary>
+      <joined>2018-11-05</joined>
+    </employee>
+    <employee id="P002">
+      <name>Eva Brown</name>
+      <title>Associate PM</title>
+      <salary>95000</salary>
+      <joined>2022-06-13</joined>
+    </employee>
+  </department>
+</company>

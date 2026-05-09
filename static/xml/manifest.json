@@ -1,0 +1,5 @@
+[
+  { "id": "01-books",      "label": "Book Catalog" },
+  { "id": "02-html-table", "label": "Product Table" },
+  { "id": "03-employees",  "label": "Employee Directory" }
+]
