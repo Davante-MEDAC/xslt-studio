@@ -6,14 +6,5 @@ export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
 	optimizeDeps: {
 		include: ['monaco-editor']
-	},
-	build: {
-		rollupOptions: {
-			output: {
-				manualChunks: {
-					monaco: ['monaco-editor']
-				}
-			}
-		}
 	}
 });
